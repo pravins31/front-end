@@ -2,7 +2,7 @@ pipeline{
     agent any
    
     tools{
-        'maven 3.9.7'
+        maven  'maven 3.9.7'
     }
     stages{
         stage('build'){
@@ -12,8 +12,8 @@ pipeline{
             }
             
         }
-    }
-    stages{
+    
+   
         stage('test'){
             
             steps{
@@ -21,8 +21,8 @@ pipeline{
             }
             
         }
-    }
-    stages{
+   
+    
         stage(package){
             
             steps{
